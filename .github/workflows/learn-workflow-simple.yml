@@ -1,5 +1,4 @@
 name: 'Learn workflow pm2 version'
-# Event for triger workflow
 on: [push]
 jobs: 
   check-pm2-version:
