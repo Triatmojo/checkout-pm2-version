@@ -1,0 +1,17 @@
+name: 'Learn workflow pm2 version'
+
+# Event for triger workflow
+on: [push]
+jobs: 
+  check-pm2-version:
+    runs-on: ubuntu-latest
+    steps:
+      uses: action/checkout@v2
+      uses: action/setup-node@v1
+      with: 
+        node-version: '12.x'
+      use: npm install -g pm2
+      use: pm2 -v
+
+
+
