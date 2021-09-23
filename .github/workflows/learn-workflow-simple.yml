@@ -1,4 +1,4 @@
-name: 'Learn workflow pm2 version'
+name: Learn workflow pm2 version
 on: [push]
 jobs: 
   check-pm2-version:
